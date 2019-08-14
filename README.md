@@ -6,15 +6,16 @@
 
 效果图：
 
-![效果图1](img/device-2019-08-14-160826.gif)
+![效果图1](img/device-2019-08-14-182600.gif)
 
-基于viewpage实现的banner功能实现：
+1. 基于viewpage实现的banner功能实现：
 
-1. 高度高度配置
-2. 选中原点自己配置
-3. 选中原点高度位置自己配置
-4. 是否自动播放可配置
-
+	1. 高度高度配置
+	2. 选中原点自己配置
+	3. 选中原点高度位置自己配置
+	4. 是否自动播放可配置
+2. 基于RecyclerView实现的banner
+   1. 高度高度配置
 
 
 集成步骤：
@@ -58,7 +59,7 @@ maven
 
 ```
 
-代码中实现：
+基于viewpage实现的banner代码中实现：
 
 ```
 <com.click.lib_banner.vgbanner.ComBanner
@@ -130,7 +131,21 @@ public class ComImageHolderView implements ComHolder<Banner> {
 
 ```
 
+基于RecyclerView实现的banner代码中实现：
+```
+ /** 基于RecyclerView实现的banner*/
+        comRecyclerViewBanner.initBannerImageView(sList, new ComRecyclerViewBannerBase.OnBannerItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                Toast.makeText(MainActivity.this, "clicked:" + position, Toast.LENGTH_SHORT).show();
+            }
+        });
+```
+
 *****************************************************************************
+v1.1.0
+基于RecyclerView实现的bannner
+
 v1.0.0
 基于viewpage实现的bannner
 
