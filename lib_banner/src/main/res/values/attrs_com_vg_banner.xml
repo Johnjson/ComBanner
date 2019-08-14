@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+      ~ Copyright (c) 2018.
+      ~ Author：Zhao
+      ~ Email：joeyzhao1005@gmail.com -->
+<resources>
+    <declare-styleable name="ComBanner">
+        <attr name="canLoop" format="boolean" />
+    </declare-styleable>
+</resources>
