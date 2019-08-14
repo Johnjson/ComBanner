@@ -5,7 +5,9 @@
 2. 基于RecyclerView实现的banner
 
 效果图：
+
 ![效果图1](img/device-2019-08-14-160826.gif)
+
 基于viewpage实现的banner功能实现：
 
 1. 高度高度配置
