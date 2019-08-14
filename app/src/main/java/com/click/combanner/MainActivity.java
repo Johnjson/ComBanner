@@ -3,6 +3,7 @@ package com.click.combanner;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.click.combanner.bean.Banner;
 import com.click.lib_banner.vgbanner.ComBanner;
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                     .setPageIndicatorAlign(ComBanner.PageIndicatorAlign.CENTER_HORIZONTAL)
                     .setPageIndicatorBottom(40)
                     .setOnItemClickListener(position -> {
-
+                        Toast.makeText(this, "点击的位置  " + position, Toast.LENGTH_LONG).show();
                     });
             // 大于1张才轮播
             boolean on = bannerList.size() > 1 ? true : false;
