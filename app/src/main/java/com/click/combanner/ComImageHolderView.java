@@ -21,7 +21,7 @@ public class ComImageHolderView implements ComHolder<Banner> {
 
     @Override
     public View createView(Context context) {
-        inflate = LayoutInflater.from(context).inflate(R.layout.view_banner_item, null);
+        inflate = LayoutInflater.from(context).inflate(R.layout.view_rv_banner_item, null);
         imageView = inflate.findViewById(R.id.iv_banner);
         return inflate;
     }

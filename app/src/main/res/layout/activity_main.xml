@@ -22,4 +22,20 @@
         android:layout_height="180dp"
         card_view:canLoop="true" />
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="基于RecyclerView实现的Banner"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <com.click.lib_banner.rvbanner.ComRecyclerViewBanner
+        android:id="@+id/rvBanner"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+         />
+
 </LinearLayout>
